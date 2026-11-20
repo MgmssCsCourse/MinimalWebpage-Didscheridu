@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Ich bins doch</title> <!--Cooler Text hier-->
-    </head>
-    <body>
-        <!-- page content -->
-	</body >
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Countdown</title>
+  <!-- ABSCHNITT: Styles (Aussehen: Farben, Schrift, Abstände) -->
+  <style>
+  </style>
+</head>
+<body>
+
+  <!-- ABSCHNITT 1: KOPFBEREICH -->
+  <!-- Hier steht der Name des Events und das Datum. -->
+  <header>
+    <h1>Name des Events</h1>
+    <p>Datum und Uhrzeit</p>
+  </header>
+
+  <!-- ABSCHNITT 2: ZEITANZEIGE -->
+  <!-- Vier Kacheln: Tage, Stunden, Minuten, Sekunden. -->
+  <!-- Die Zahlen werden per Script jede Sekunde aktualisiert. -->
+  <section id="zeit">
+    <div>Tage</div>
+    <div>Stunden</div>
+    <div>Minuten</div>
+    <div>Sekunden</div>
+  </section>
+
+  <!-- ABSCHNITT 3: MELDUNG BEI ABGELAUFENER ZEIT -->
+  <!-- Wird angezeigt, sobald der Termin erreicht ist (z. B. „Es ist so weit!"). -->
+  <!-- Ist am Anfang versteckt. -->
+  <div id="fertig" hidden>Es ist so weit!</div>
+
+  <!-- ABSCHNITT 4: EINGABEFORMULAR -->
+  <!-- Name und Datum des Events eingeben und speichern. -->
+  <form id="formular">
+    <input type="text" placeholder="Name des Events">
+    <input type="datetime-local">
+    <button type="submit">Speichern</button>
+  </form>
+
+  <!-- ABSCHNITT 5: FUSSZEILE (optional) -->
+  <footer>
+  </footer>
+
+  <!-- ABSCHNITT 6: SCRIPT (Logik) -->
+  <!-- Hier kommen: Zeit berechnen, Anzeige aktualisieren, -->
+  <!-- Eingaben speichern und die Meldung bei Ablauf zeigen. -->
+  <script>
+  </script>
+
+</body>
 </html>
